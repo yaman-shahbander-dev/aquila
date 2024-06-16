@@ -8,11 +8,11 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="<?php language_attributes(); ?>">
 <head>
-	<meta charset="utf-8">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Wordpress Theme</title>
+	<?php wp_head(); ?>
 </head>
 <body>
 	<header>Header</header>
