@@ -40,5 +40,10 @@ class AQUILA_THEME {
 			'header-text'          => ['site-title', 'site-description'],
 			'unlink-homepage-logo' => true,
 		]);
+
+		add_theme_support('custom-background', [
+			'default-color' => '#fff',
+			'default-image' => '',
+		]);
 	}
 }
