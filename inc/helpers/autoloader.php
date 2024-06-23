@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Autoloader file for theme.
  *
@@ -31,7 +32,7 @@ function autoloader( $resource = '' ) {
 		'\\',
 		str_replace( '_', '-', strtolower( $resource ) )
 	);
-
+	
 	/**
 	 * Time to determine which type of resource path it is,
 	 * so that we can deduce the correct file path for it.
@@ -81,7 +82,7 @@ function autoloader( $resource = '' ) {
 		// We already making sure that file is exists and valid.
 		require_once( $resource_path ); // phpcs:ignore
 	}
-
 }
 
-spl_autoload_register('\AQUILA_THEME\Inc\Helpers\autoloader');
+
+spl_autoload_register('AQUILA_THEME\Inc\Helpers\autoloader');
