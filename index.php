@@ -26,14 +26,17 @@
 								<?php
 							}
 						?>
-						<?php 
-							while (have_posts()): the_post();
-								the_title();
-								the_content();
-							endwhile;
-						?>
+						<div class="row">
+							<?php while (have_posts()): the_post(); ?>
+								<div class="col-lg-4 col-md-6 col-sm-12">
+									<?php get_template_part('template-parts/content'); ?>
+								</div>
+							<?php endwhile; ?>
+						</div>
 					</div>
 				<?php
+			} else {
+				get_template_part('template-parts/content-none');
 			}
 		?>
 	</main>
